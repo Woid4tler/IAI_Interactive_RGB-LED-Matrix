@@ -107,13 +107,13 @@ void draw () {
       if(motion[i] > 25){
         serialPort.write('1'); 
         stroke (255, 20);
-        fill (0, 0, 255, 125);
+        fill (0, 0, 255, 140);
         rect ((i % videoCols) * pxPerCol, (i / videoCols) * pxPerRow, pxPerCol, pxPerRow);
       }
       else{
         serialPort.write('0');
         stroke (255, 20);
-        fill (0, 0, 0, 175);
+        fill (0, 0, 0, 180);
         rect ((i % videoCols) * pxPerCol, (i / videoCols) * pxPerRow, pxPerCol, pxPerRow);
       }
     }
